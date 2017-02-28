@@ -15,6 +15,7 @@
 		693E89971E650933005803F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693E89951E650933005803F0 /* LaunchScreen.storyboard */; };
 		693E89A21E650933005803F0 /* LouXiaoShiYiLangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 693E89A11E650933005803F0 /* LouXiaoShiYiLangTests.m */; };
 		693E89AD1E650933005803F0 /* LouXiaoShiYiLangUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 693E89AC1E650933005803F0 /* LouXiaoShiYiLangUITests.m */; };
+		693E89BC1E650C0D005803F0 /* QRCodeVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 693E89BB1E650C0D005803F0 /* QRCodeVIew.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		693E89A81E650933005803F0 /* LouXiaoShiYiLangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LouXiaoShiYiLangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		693E89AC1E650933005803F0 /* LouXiaoShiYiLangUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LouXiaoShiYiLangUITests.m; sourceTree = "<group>"; };
 		693E89AE1E650933005803F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		693E89BA1E650C0D005803F0 /* QRCodeVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeVIew.h; sourceTree = "<group>"; };
+		693E89BB1E650C0D005803F0 /* QRCodeVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeVIew.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				693E89951E650933005803F0 /* LaunchScreen.storyboard */,
 				693E89981E650933005803F0 /* Info.plist */,
 				693E89871E650933005803F0 /* Supporting Files */,
+				693E89BA1E650C0D005803F0 /* QRCodeVIew.h */,
+				693E89BB1E650C0D005803F0 /* QRCodeVIew.m */,
 			);
 			path = LouXiaoShiYiLang;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693E89BC1E650C0D005803F0 /* QRCodeVIew.m in Sources */,
 				693E898F1E650933005803F0 /* ViewController.m in Sources */,
 				693E898C1E650933005803F0 /* AppDelegate.m in Sources */,
 				693E89891E650933005803F0 /* main.m in Sources */,
