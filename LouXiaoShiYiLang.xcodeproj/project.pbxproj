@@ -16,6 +16,14 @@
 		693E89A21E650933005803F0 /* LouXiaoShiYiLangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 693E89A11E650933005803F0 /* LouXiaoShiYiLangTests.m */; };
 		693E89AD1E650933005803F0 /* LouXiaoShiYiLangUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 693E89AC1E650933005803F0 /* LouXiaoShiYiLangUITests.m */; };
 		693E89BC1E650C0D005803F0 /* QRCodeVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 693E89BB1E650C0D005803F0 /* QRCodeVIew.m */; };
+		693E89E61E656185005803F0 /* MyIcon8.png in Resources */ = {isa = PBXBuildFile; fileRef = 693E89DE1E656185005803F0 /* MyIcon8.png */; };
+		693E89E71E656185005803F0 /* MyIcon7.png in Resources */ = {isa = PBXBuildFile; fileRef = 693E89DF1E656185005803F0 /* MyIcon7.png */; };
+		693E89E81E656185005803F0 /* MyIcon6.png in Resources */ = {isa = PBXBuildFile; fileRef = 693E89E01E656185005803F0 /* MyIcon6.png */; };
+		693E89E91E656185005803F0 /* MyIcon5.png in Resources */ = {isa = PBXBuildFile; fileRef = 693E89E11E656185005803F0 /* MyIcon5.png */; };
+		693E89EA1E656185005803F0 /* MyIcon4.png in Resources */ = {isa = PBXBuildFile; fileRef = 693E89E21E656185005803F0 /* MyIcon4.png */; };
+		693E89EB1E656185005803F0 /* MyIcon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 693E89E31E656185005803F0 /* MyIcon3.png */; };
+		693E89EC1E656185005803F0 /* MyIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 693E89E41E656185005803F0 /* MyIcon2.png */; };
+		693E89ED1E656185005803F0 /* MyIcon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 693E89E51E656185005803F0 /* MyIcon1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,14 @@
 		693E89AE1E650933005803F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		693E89BA1E650C0D005803F0 /* QRCodeVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeVIew.h; sourceTree = "<group>"; };
 		693E89BB1E650C0D005803F0 /* QRCodeVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeVIew.m; sourceTree = "<group>"; };
+		693E89DE1E656185005803F0 /* MyIcon8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyIcon8.png; sourceTree = "<group>"; };
+		693E89DF1E656185005803F0 /* MyIcon7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyIcon7.png; sourceTree = "<group>"; };
+		693E89E01E656185005803F0 /* MyIcon6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyIcon6.png; sourceTree = "<group>"; };
+		693E89E11E656185005803F0 /* MyIcon5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyIcon5.png; sourceTree = "<group>"; };
+		693E89E21E656185005803F0 /* MyIcon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyIcon4.png; sourceTree = "<group>"; };
+		693E89E31E656185005803F0 /* MyIcon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyIcon3.png; sourceTree = "<group>"; };
+		693E89E41E656185005803F0 /* MyIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyIcon2.png; sourceTree = "<group>"; };
+		693E89E51E656185005803F0 /* MyIcon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyIcon1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +100,7 @@
 		693E897B1E650933005803F0 = {
 			isa = PBXGroup;
 			children = (
+				693E89BD1E655DB3005803F0 /* image */,
 				693E89861E650933005803F0 /* LouXiaoShiYiLang */,
 				693E89A01E650933005803F0 /* LouXiaoShiYiLangTests */,
 				693E89AB1E650933005803F0 /* LouXiaoShiYiLangUITests */,
@@ -143,6 +160,21 @@
 				693E89AE1E650933005803F0 /* Info.plist */,
 			);
 			path = LouXiaoShiYiLangUITests;
+			sourceTree = "<group>";
+		};
+		693E89BD1E655DB3005803F0 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				693E89DE1E656185005803F0 /* MyIcon8.png */,
+				693E89DF1E656185005803F0 /* MyIcon7.png */,
+				693E89E01E656185005803F0 /* MyIcon6.png */,
+				693E89E11E656185005803F0 /* MyIcon5.png */,
+				693E89E21E656185005803F0 /* MyIcon4.png */,
+				693E89E31E656185005803F0 /* MyIcon3.png */,
+				693E89E41E656185005803F0 /* MyIcon2.png */,
+				693E89E51E656185005803F0 /* MyIcon1.png */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +244,7 @@
 				TargetAttributes = {
 					693E89831E650933005803F0 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 65Y8F76Y6Z;
+						DevelopmentTeam = 5S4L29TXXC;
 						ProvisioningStyle = Automatic;
 					};
 					693E899C1E650933005803F0 = {
@@ -255,6 +287,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				693E89971E650933005803F0 /* LaunchScreen.storyboard in Resources */,
+				693E89EA1E656185005803F0 /* MyIcon4.png in Resources */,
+				693E89E61E656185005803F0 /* MyIcon8.png in Resources */,
+				693E89E71E656185005803F0 /* MyIcon7.png in Resources */,
+				693E89E81E656185005803F0 /* MyIcon6.png in Resources */,
+				693E89E91E656185005803F0 /* MyIcon5.png in Resources */,
+				693E89EB1E656185005803F0 /* MyIcon3.png in Resources */,
+				693E89EC1E656185005803F0 /* MyIcon2.png in Resources */,
+				693E89ED1E656185005803F0 /* MyIcon1.png in Resources */,
 				693E89941E650933005803F0 /* Assets.xcassets in Resources */,
 				693E89921E650933005803F0 /* Main.storyboard in Resources */,
 			);
@@ -431,10 +471,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 65Y8F76Y6Z;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5S4L29TXXC;
 				INFOPLIST_FILE = LouXiaoShiYiLang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SaveYourTime.LouXiaoShiYiLang;
+				PRODUCT_BUNDLE_IDENTIFIER = net.xtion.enterpriseCertificateTrust;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -443,11 +484,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 65Y8F76Y6Z;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5S4L29TXXC;
 				INFOPLIST_FILE = LouXiaoShiYiLang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SaveYourTime.LouXiaoShiYiLang;
+				PRODUCT_BUNDLE_IDENTIFIER = net.xtion.enterpriseCertificateTrust;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

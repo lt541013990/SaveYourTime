@@ -29,6 +29,15 @@
     [self.view addSubview:self.phoneField];
     [self.view addSubview:self.confirmBtn];
     [self.view addSubview:self.codeView];
+    
+    UITapGestureRecognizer *endEditTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
+    endEditTap.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:endEditTap];
+    
+    UITapGestureRecognizer *codeViewTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(codeViewTapped:)];
+    codeViewTap.cancelsTouchesInView = NO;
+    [self.codeView addGestureRecognizer:codeViewTap];
+    
 }
 
 
@@ -46,6 +55,20 @@
     NSString *info = [NSString stringWithFormat:@"8002%@%ld400106B008",phone,date];
     NSLog(@"%@",info);
     [self.codeView showQRCode:info];
+    
+    // 将号码存储到本地
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    [userDefault setObject:phone forKey:@"phoneNumber"];
+}
+
+- (void)codeViewTapped:(UITapGestureRecognizer*)tap
+{
+    [self confirmBtnClicked];
+}
+
+-(void)viewTapped:(UITapGestureRecognizer*)tap
+{
+    [self.view endEditing:YES];
 }
 
 #pragma mark -lazy
@@ -58,6 +81,14 @@
         _phoneField.borderStyle = UITextBorderStyleRoundedRect;
         _phoneField.layer.cornerRadius = 10;
         _phoneField.font = [UIFont systemFontOfSize:13];
+        _phoneField.keyboardType = UIKeyboardTypePhonePad;
+        
+        NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+        NSString *phone = [userDefault objectForKey:@"phoneNumber"];
+        if (phone && phone.length > 0)
+        {   
+            _phoneField.text = phone;
+        }
         
     }
     return _phoneField;
@@ -70,9 +101,9 @@
     {
         _confirmBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _confirmBtn.frame = CGRectMake(self.phoneField.frame.size.width + self.phoneField.frame.origin.x+15, self.phoneField.frame.origin.y, 60, 40);
-        _confirmBtn.layer.cornerRadius = 10;
-        [_confirmBtn setTitle:@"生成二维码" forState:UIControlStateNormal];
-        [_confirmBtn.titleLabel setFont:[UIFont systemFontOfSize:10]];
+        _confirmBtn.layer.cornerRadius = 7;
+        [_confirmBtn setTitle:@"GO!" forState:UIControlStateNormal];
+        [_confirmBtn.titleLabel setFont:[UIFont systemFontOfSize:12]];
         _confirmBtn.backgroundColor = [UIColor redColor];
         [_confirmBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_confirmBtn addTarget:self action:@selector(confirmBtnClicked) forControlEvents:UIControlEventTouchUpInside];
@@ -87,6 +118,7 @@
         CGRect codeViewFrame = CGRectMake(0, 100, 200, 200);
         _codeView = [[QRCodeVIew alloc] initWithFrame:codeViewFrame];
         _codeView.center = self.view.center;
+        _codeView.userInteractionEnabled = YES;
     }
     return _codeView;
 
