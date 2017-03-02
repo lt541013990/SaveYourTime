@@ -52,7 +52,7 @@
     NSString *phone = self.phoneField.text;
     NSInteger date = [[NSDate date] timeIntervalSince1970];
     date *= 1000;
-    NSString *info = [NSString stringWithFormat:@"8002|%@|%ld|400106B008",phone,date];
+    NSString *info = [NSString stringWithFormat:@"8160|%@|%ld|400106B008",phone,date];
     NSLog(@"%@",info);
     [self.codeView showQRCode:info];
     
