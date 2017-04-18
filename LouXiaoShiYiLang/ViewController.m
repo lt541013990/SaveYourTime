@@ -29,7 +29,6 @@
     UITapGestureRecognizer *codeViewTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(codeViewTapped:)];
     codeViewTap.cancelsTouchesInView = NO;
     [self.codeView addGestureRecognizer:codeViewTap];
-    
 }
 
 
