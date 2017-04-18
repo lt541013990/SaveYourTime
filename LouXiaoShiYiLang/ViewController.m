@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "QRCodeVIew.h"
+#import <objc/runtime.h>
 
 @interface ViewController ()
 
@@ -47,12 +48,13 @@
 
 }
 
+
 - (void)confirmBtnClicked
 {
     NSString *phone = self.phoneField.text;
     NSInteger date = [[NSDate date] timeIntervalSince1970];
     date *= 1000;
-    NSString *info = [NSString stringWithFormat:@"8160|%@|%ld|400106B008",phone,date];
+    NSString *info = [NSString stringWithFormat:@"8160|%@|%ld|440106B008",phone,date];
     NSLog(@"%@",info);
     [self.codeView showQRCode:info];
     
@@ -61,17 +63,17 @@
     [userDefault setObject:phone forKey:@"phoneNumber"];
 }
 
-- (void)codeViewTapped:(UITapGestureRecognizer*)tap
+- (void)codeViewTapped:(UITapGestureRecognizer *)tap
 {
     [self confirmBtnClicked];
 }
 
--(void)viewTapped:(UITapGestureRecognizer*)tap
+-(void)viewTapped:(UITapGestureRecognizer *)tap
 {
     [self.view endEditing:YES];
 }
 
-#pragma mark -lazy
+#pragma mark - lazy
 - (UITextField *)phoneField
 {
     if (!_phoneField)
