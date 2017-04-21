@@ -604,8 +604,10 @@
 				DEVELOPMENT_TEAM = 5S4L29TXXC;
 				INFOPLIST_FILE = LouXiaoShiYiLang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.xtion.enterpriseCertificateTrust;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GuangZhouXuanWu.louxiaoshiyilang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -618,7 +620,7 @@
 				DEVELOPMENT_TEAM = 5S4L29TXXC;
 				INFOPLIST_FILE = LouXiaoShiYiLang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.xtion.enterpriseCertificateTrust;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GuangZhouXuanWu.louxiaoshiyilang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -678,11 +680,15 @@
 		695CAB311EA5B75B0074B16D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5S4L29TXXC;
 				INFOPLIST_FILE = Widget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.xtion.enterpriseCertificateTrust.Widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GuangZhouXuanWu.louxiaoshiyilang.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -690,11 +696,15 @@
 		695CAB321EA5B75B0074B16D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5S4L29TXXC;
 				INFOPLIST_FILE = Widget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.xtion.enterpriseCertificateTrust.Widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GuangZhouXuanWu.louxiaoshiyilang.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -745,6 +755,7 @@
 				695CAB321EA5B75B0074B16D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
